@@ -148,10 +148,6 @@ button:focus {
   z-index: 2;
 }
 
-.bg-custom {
-  background-color: #000;
-}
-
 .section-main-title {
   max-width: 570px;
 }
@@ -169,21 +165,6 @@ button:focus {
 
 .main-title-border i {
   font-size: 20px;
-}
-
-.bg-overlay-gredient {
-  background: linear-gradient(
-    32deg,
-    rgba(18, 166, 181, 0.8) 0%,
-    rgba(16, 12, 242, 0.7) 100%
-  );
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .bg-overlay {
