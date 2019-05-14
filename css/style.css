@@ -49,6 +49,7 @@ button:focus {
   background: rgba(166, 175, 189, 0.3);
 }
 
+
 #about {
   padding-top: 30px;
 }
@@ -224,10 +225,10 @@ button:focus {
 }
 
 .social_home li a {
-  font-size: 18px;
+  font-size: 30px !important;
   color: #ffffff;
   display: inline-block;
-  width: 30px;
+  width: 40px !important;
   text-align: center;
 }
 
