@@ -1,16 +1,13 @@
 !(function($) {
   "use strict";
 
-  var myPortfolio = function() {};
-
   //make overflow visible
-  (myPortfolio.prototype.showDelay = function() {
-    $("body")
-      .delay(350)
+  function showDelay() {
+    $("body").delay(350)
       
-  }),
+  }
     //scroll, add if it more than 50 px from the top
-    (myPortfolio.prototype.stickyNav = function() {
+    function stickyNav() {
       $(window).on("scroll", function() {
         var scroll = $(window).scrollTop();
 
@@ -20,9 +17,9 @@
           $(".sticky").removeClass("stickyadd");
         }
       });
-    }),
+    }
     //make it scroll smooth
-    (myPortfolio.prototype.smoothScroll = function() {
+    function smoothScroll() {
       $(".navbar-nav a, .scroll_down a").on("click", function(event) {
         var $anchor = $(this);
         $("html, body")
@@ -34,16 +31,16 @@
           );
         event.preventDefault();
       });
-    }),
+    }
     //ScrollSpy
-    (myPortfolio.prototype.navSpyScroll = function() {
+    function navSpyScroll() {
       $("#navbarCollapse").scrollspy({
         offset: 20
       });
-    }),
+    }
    
     //Typed Text
-    (myPortfolio.prototype.initTypedText = function() {
+    function initTypedText() {
       $(".element").each(function() {
         var $this = $(this);
         $this.typed({
@@ -52,21 +49,18 @@
           backDelay: 2000,
         });
       });
-    }),
+    }
     
-    (myPortfolio.prototype.init = function() {
-      this.showDelay();
-      this.stickyNav();
-      this.smoothScroll();
-      this.navSpyScroll();
-      this.initTypedText();
-    }),
+    function init() {
+      showDelay();
+      stickyNav();
+      smoothScroll();
+      navSpyScroll();
+      initTypedText();
+    }
+
+    init();
     //init
-    ($.myPortfolio = new myPortfolio()),
-    ($.myPortfolio.Constructor = myPortfolio);
-})(window.jQuery),
-  //initializing
-  (function($) {
-    "use strict";
-    $.myPortfolio.init();
-  })(window.jQuery);
+    
+})(window.jQuery)
+ 
