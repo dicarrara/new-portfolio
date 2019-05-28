@@ -293,16 +293,17 @@ button:focus {
   content: "";
   display: none;
 }
-
-.skill-custom .progress {
-  height: 4px;
-  margin-bottom: 40px;
-  margin-top: 10px;
+.skills {
+  font-size: 25px;
+  font-weight: bold;
 }
+/* .img-fluid {
+  width: 300px;
+  height: auto;
 
-.skill-custom .progress-bar {
-  background: #000;
-}
+} */
+
+
 
 /* education page */
 
