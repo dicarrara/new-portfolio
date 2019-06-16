@@ -73,6 +73,11 @@ button:focus {
   color: #777;
 }
 
+.Linkedin {
+  font-size: 20px;
+  color:  #777;
+}
+
 .text-custom {
   color: #000 !important;
 }
@@ -295,8 +300,25 @@ button:focus {
 }
 .skills {
   font-size: 25px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
+
+#FrontEnd,
+#BackEnd {
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+}
+
+.description {
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.link {
+  
+}
+
 /* .img-fluid {
   width: 300px;
   height: auto;
