@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700");
 
+/* * { z-index: 1; }
+.particles-js-canvas-el, .particles-js-canvas-el > canvas { z-index:  !important; } */
+
 body {
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
@@ -31,32 +34,6 @@ h6.font-weight-bold {
   font-weight: 600 !important;
 }
 
-a,
-a:hover,
-a:focus,
-button,
-button:focus {
-  text-decoration: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-::selection {
-  background: rgba(166, 175, 189, 0.3);
-}
-
-::-moz-selection {
-  background: rgba(166, 175, 189, 0.3);
-}
-
-.jarallax{
-  background-size: cover;
-  background-position: center center;
-}
-.home-bg,.h-100vh.jarallax,.h-100vh.bg-dark,.home-bg-slider .carousel-item{
-  padding: 110px 0 170px 0;
-}
-
 #about {
   padding-top: 30px;
 }
@@ -69,7 +46,11 @@ button:focus {
 }
 
 .bg-dark {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+.z-index {
+  z-index: 2;
 }
 
 .text-dark {
