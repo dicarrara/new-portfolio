@@ -6,7 +6,6 @@
     <title>Diana's Portfolio</title>
     <!-- <link rel="shortcut icon" href="images/favicon.ico" /> -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/ytplayer.css" />
     <link rel="stylesheet" href="css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="css/mobiriseicons.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
@@ -59,11 +58,7 @@
     <!--home page-->
     <section class="section h-100vh bg-dark" id="home">
       <div class="bg-overlay"></div>
-      <a
-        id="video"
-        class="youtube-bg"
-        data-property="{videoURL:'https://www.youtube.com/watch?v=lQYNgLyxHug',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"
-      ></a>
+     
       <div class="home-table">
         <div class="home-table-center">
           <div class="container">
@@ -485,18 +480,10 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrollspy.min.js"></script>
     <script src="js/typed.js"></script>
-    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <!--PARTICLES ANIMATE JS-->
+    <script src="js/particles.js"></script>  
+    <script src="js/particles.app.js"></script> 
     <script src="js/custom.js"></script>
-    <script>
-      $(".element").each(function() {
-        var $this = $(this);
-        $this.typed({
-          strings: $this.attr("data-elements").split(","),
-          typeSpeed: 10,
-          backDelay: 0
-        });
-      });
-      $(".youtube-bg").mb_YTPlayer();
-    </script>
+    
   </body>
 </html>

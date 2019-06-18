@@ -49,6 +49,13 @@ button:focus {
   background: rgba(166, 175, 189, 0.3);
 }
 
+.jarallax{
+  background-size: cover;
+  background-position: center center;
+}
+.home-bg,.h-100vh.jarallax,.h-100vh.bg-dark,.home-bg-slider .carousel-item{
+  padding: 110px 0 170px 0;
+}
 
 #about {
   padding-top: 30px;
